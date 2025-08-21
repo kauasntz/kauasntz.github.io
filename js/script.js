@@ -1,5 +1,5 @@
 
-// Smooth scrolling para links de navegação
+// navegação suave
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Animação de fade-in ao fazer scroll
+// animação de fade-in ao fazer scroll
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -31,7 +31,7 @@ document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
 });
 
-// Efeito no header ao fazer scroll
+// efeito no header ao fazer scroll
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 
@@ -47,23 +47,7 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop;
 });
 
-// Função para lidar com o envio do formulário
-function handleSubmit(event) {
-    event.preventDefault();
-    
-    const formData = new FormData(event.target);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
-    
-    // Aqui você pode integrar com um serviço de email como EmailJS
-    alert(`Obrigado ${name}! Sua mensagem foi recebida. Entrarei em contato em breve!`);
-    
-    // Limpar o formulário
-    event.target.reset();
-}
-
-// Adicionar partículas flutuantes no hero
+// adicionar partículas flutuantes no hero
 function createParticle() {
     const particle = document.createElement('div');
     particle.style.cssText = `
@@ -99,5 +83,5 @@ function createParticle() {
     }, 6000);
 }
 
-// Criar partículas periodicamente
+// criar partículas periodicamente
 setInterval(createParticle, 300);
