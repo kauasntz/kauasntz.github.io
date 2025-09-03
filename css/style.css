@@ -389,3 +389,43 @@ footer {
     object-fit: cover;
     border: 3px solid white;
 }
+
+.project-upper {
+    margin-bottom: 1.5rem;
+    color: #94a3b8;
+}
+
+.project-lower {
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    color: #94a3b8;
+}
+
+.lista-projetos {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e2e8f0;
+}
+
+.lista-projetos li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.lista-projetos li:before {
+    content: "•";
+    color: #10b981;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.lista-projetos strong {
+    color: #10b981;
+    font-weight: 600;
+}
