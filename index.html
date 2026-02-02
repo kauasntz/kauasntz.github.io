@@ -73,7 +73,46 @@
                 <div class="projects-grid">
 
                     <div class="project-card">
-                        <div class="project-img">🌐</div>
+                        <!-- Carrossel de Imagens -->
+                        <div class="project-carousel">
+                            <button class="carousel-btn prev" onclick="changeSlide(0, -1)" aria-label="Imagem anterior">
+                                <span>‹</span>
+                            </button>
+                            <div class="carousel-container">
+                                <div class="carousel-slides">
+                                    <img src="images/learnloop-1.png" alt="LearnLoop - Tela de login" class="carousel-slide active">
+                                    <img src="images/learnloop-2.png" alt="LearnLoop - Tela de cadastro" class="carousel-slide">
+                                    <img src="images/learnloop-3.png" alt="LearnLoop - Tela de perfil do Aluno" class="carousel-slide">
+                                    <img src="images/learnloop-4.png" alt="LearnLoop - Tela de perfil do Professor" class="carousel-slide">
+                                    <img src="images/learnloop-5.png" alt="LearnLoop - Criando novo Projeto" class="carousel-slide">
+                                    <img src="images/learnloop-6.png" alt="LearnLoop - Tela de configurações do Projeto" class="carousel-slide">
+                                    <img src="images/learnloop-7.png" alt="LearnLoop - Adicionando Aluno ao Projeto" class="carousel-slide">
+                                    <img src="images/learnloop-8.png" alt="LearnLoop - Aluno adicionado ao Projeto" class="carousel-slide">
+                                    <img src="images/learnloop-9.png" alt="LearnLoop - Criando nova task no Projeto" class="carousel-slide">
+                                    <img src="images/learnloop-10.png" alt="LearnLoop - Tela de Projeto com tasks criadas" class="carousel-slide">
+                                    <img src="images/learnloop-11.png" alt="LearnLoop - Tela de roadmap" class="carousel-slide">
+                                    <img src="images/learnloop-12.png" alt="LearnLoop - Tela de avaliações" class="carousel-slide">
+                                </div>
+                            </div>
+                            <button class="carousel-btn next" onclick="changeSlide(0, 1)" aria-label="Próxima imagem">
+                                <span>›</span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(0, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 1)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 2)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 3)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 4)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 5)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 6)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 7)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 8)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 9)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 10)"></span>
+                                <span class="indicator" onclick="goToSlide(0, 11)"></span>
+                            </div>
+                        </div>
+
                         <div class="project-content">
                             <h3>LearnLoop (Grupo)</h3>
 
@@ -103,7 +142,26 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-img">🌐</div>
+                        <!-- Carrossel de Imagens -->
+                        <div class="project-carousel">
+                            <button class="carousel-btn prev" onclick="changeSlide(1, -1)" aria-label="Imagem anterior">
+                                <span>‹</span>
+                            </button>
+                            <div class="carousel-container">
+                                <div class="carousel-slides">
+                                    <img src="images/projeto2-1.png" alt="Projeto 2 - Screenshot 1" class="carousel-slide active">
+                                    <img src="images/projeto2-2.png" alt="Projeto 2 - Screenshot 2" class="carousel-slide">
+                                </div>
+                            </div>
+                            <button class="carousel-btn next" onclick="changeSlide(1, 1)" aria-label="Próxima imagem">
+                                <span>›</span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <span class="indicator active" onclick="goToSlide(1, 0)"></span>
+                                <span class="indicator" onclick="goToSlide(1, 1)"></span>
+                            </div>
+                        </div>
+
                         <div class="project-content">
                             <h3>Projeto 2</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, dolore, magnam cumque voluptatem omnis reprehenderit at adipisci illum repellendus asperiores recusandae error vel ipsum a quae ex maxime fugit tempora?</p>
@@ -123,7 +181,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Kauã Santos Lima. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Kauã Santos Lima.</p>
             
         </div>
     </footer>
