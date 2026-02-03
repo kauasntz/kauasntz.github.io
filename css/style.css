@@ -574,6 +574,7 @@ footer {
         gap: 6px;
     }
 }
+
 .contact-section {
     text-align: center;
     max-width: 500px;
@@ -656,10 +657,8 @@ footer {
     opacity: 1;
 }
 
-.link-icon svg {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
+.link-icon i {
+    font-size: 20px;
 }
 
 .link-icon::after {
@@ -702,9 +701,8 @@ footer {
         height: 45px;
     }
     
-    .link-icon svg {
-        width: 18px;
-        height: 18px;
+    .link-icon i {
+        font-size: 18px;
     }
     
     .links-container {
